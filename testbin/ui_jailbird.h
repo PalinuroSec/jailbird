@@ -288,7 +288,7 @@ public:
 
         retranslateUi(jailbird);
 
-        infogather->setCurrentIndex(2);
+        infogather->setCurrentIndex(0);
         vulnscan->setCurrentIndex(0);
         exploit->setCurrentIndex(3);
 
