@@ -15,6 +15,7 @@ TEMPLATE = app
 SOURCES += main.cpp\
         jailbird.cpp
 
-HEADERS  += jailbird.h
+HEADERS  += jailbird.h\
+        ui_jailbird.h
 
 FORMS    += jailbird.ui
