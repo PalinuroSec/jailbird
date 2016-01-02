@@ -51,17 +51,23 @@ public:
     QWidget *infogather_osint_tab;
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout;
+    QPushButton *pushButton_8;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_7;
     QPushButton *pushButton;
     QWidget *infogather_footprint_tab;
     QWidget *horizontalLayoutWidget_2;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_3;
+    QPushButton *pushButton_10;
+    QPushButton *pushButton_9;
     QPushButton *pushButton_4;
     QWidget *infogather_scan_tab;
     QWidget *horizontalLayoutWidget_3;
     QHBoxLayout *horizontalLayout_3;
     QPushButton *pushButton_5;
+    QPushButton *pushButton_12;
+    QPushButton *pushButton_11;
     QPushButton *pushButton_6;
     QLabel *vulnscan_title;
     QTabWidget *vulnscan;
@@ -172,18 +178,28 @@ public:
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setSizeConstraint(QLayout::SetMinAndMaxSize);
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButton_8 = new QPushButton(horizontalLayoutWidget);
+        pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
+
+        horizontalLayout->addWidget(pushButton_8);
+
         pushButton_2 = new QPushButton(horizontalLayoutWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
 
         horizontalLayout->addWidget(pushButton_2);
+
+        pushButton_7 = new QPushButton(horizontalLayoutWidget);
+        pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
+
+        horizontalLayout->addWidget(pushButton_7);
 
         pushButton = new QPushButton(horizontalLayoutWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
         horizontalLayout->addWidget(pushButton);
 
-        horizontalLayout->setStretch(0, 10);
         horizontalLayout->setStretch(1, 10);
+        horizontalLayout->setStretch(3, 10);
         infogather->addTab(infogather_osint_tab, QString());
         infogather_footprint_tab = new QWidget();
         infogather_footprint_tab->setObjectName(QStringLiteral("infogather_footprint_tab"));
@@ -201,13 +217,23 @@ public:
 
         horizontalLayout_2->addWidget(pushButton_3);
 
+        pushButton_10 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
+
+        horizontalLayout_2->addWidget(pushButton_10);
+
+        pushButton_9 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_9->setObjectName(QStringLiteral("pushButton_9"));
+
+        horizontalLayout_2->addWidget(pushButton_9);
+
         pushButton_4 = new QPushButton(horizontalLayoutWidget_2);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
 
         horizontalLayout_2->addWidget(pushButton_4);
 
         horizontalLayout_2->setStretch(0, 10);
-        horizontalLayout_2->setStretch(1, 10);
+        horizontalLayout_2->setStretch(3, 10);
         infogather->addTab(infogather_footprint_tab, QString());
         infogather_scan_tab = new QWidget();
         infogather_scan_tab->setObjectName(QStringLiteral("infogather_scan_tab"));
@@ -225,13 +251,23 @@ public:
 
         horizontalLayout_3->addWidget(pushButton_5);
 
+        pushButton_12 = new QPushButton(horizontalLayoutWidget_3);
+        pushButton_12->setObjectName(QStringLiteral("pushButton_12"));
+
+        horizontalLayout_3->addWidget(pushButton_12);
+
+        pushButton_11 = new QPushButton(horizontalLayoutWidget_3);
+        pushButton_11->setObjectName(QStringLiteral("pushButton_11"));
+
+        horizontalLayout_3->addWidget(pushButton_11);
+
         pushButton_6 = new QPushButton(horizontalLayoutWidget_3);
         pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
 
         horizontalLayout_3->addWidget(pushButton_6);
 
         horizontalLayout_3->setStretch(0, 10);
-        horizontalLayout_3->setStretch(1, 10);
+        horizontalLayout_3->setStretch(3, 10);
         infogather->addTab(infogather_scan_tab, QString());
 
         box0->addWidget(infogather);
@@ -288,7 +324,7 @@ public:
 
         retranslateUi(jailbird);
 
-        infogather->setCurrentIndex(0);
+        infogather->setCurrentIndex(2);
         vulnscan->setCurrentIndex(0);
         exploit->setCurrentIndex(3);
 
@@ -305,13 +341,19 @@ public:
 #endif // QT_NO_TOOLTIP
         target_valid->setText(QString());
         infogather_title->setText(QApplication::translate("jailbird", "information Gathering", 0));
+        pushButton_8->setText(QApplication::translate("jailbird", "PushButton", 0));
         pushButton_2->setText(QApplication::translate("jailbird", "PushButton", 0));
+        pushButton_7->setText(QApplication::translate("jailbird", "PushButton", 0));
         pushButton->setText(QApplication::translate("jailbird", "PushButton", 0));
         infogather->setTabText(infogather->indexOf(infogather_osint_tab), QApplication::translate("jailbird", "OSINT", 0));
         pushButton_3->setText(QApplication::translate("jailbird", "PushButton", 0));
+        pushButton_10->setText(QApplication::translate("jailbird", "PushButton", 0));
+        pushButton_9->setText(QApplication::translate("jailbird", "PushButton", 0));
         pushButton_4->setText(QApplication::translate("jailbird", "PushButton", 0));
         infogather->setTabText(infogather->indexOf(infogather_footprint_tab), QApplication::translate("jailbird", "Footprinting", 0));
         pushButton_5->setText(QApplication::translate("jailbird", "PushButton", 0));
+        pushButton_12->setText(QApplication::translate("jailbird", "PushButton", 0));
+        pushButton_11->setText(QApplication::translate("jailbird", "PushButton", 0));
         pushButton_6->setText(QApplication::translate("jailbird", "PushButton", 0));
         infogather->setTabText(infogather->indexOf(infogather_scan_tab), QApplication::translate("jailbird", "Deep scanning", 0));
         vulnscan_title->setText(QApplication::translate("jailbird", "Vulnerability scanning", 0));
