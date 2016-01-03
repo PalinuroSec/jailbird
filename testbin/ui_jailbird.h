@@ -243,7 +243,7 @@ public:
 
         infogather->setCurrentIndex(0);
         vulnscan->setCurrentIndex(0);
-        exploit->setCurrentIndex(0);
+        exploit->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(jailbird);
