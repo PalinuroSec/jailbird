@@ -248,11 +248,18 @@ public:
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
         pushButton_5 = new QPushButton(horizontalLayoutWidget_3);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(pushButton_5->sizePolicy().hasHeightForWidth());
+        pushButton_5->setSizePolicy(sizePolicy);
 
         horizontalLayout_3->addWidget(pushButton_5);
 
         pushButton_12 = new QPushButton(horizontalLayoutWidget_3);
         pushButton_12->setObjectName(QStringLiteral("pushButton_12"));
+        sizePolicy.setHeightForWidth(pushButton_12->sizePolicy().hasHeightForWidth());
+        pushButton_12->setSizePolicy(sizePolicy);
 
         horizontalLayout_3->addWidget(pushButton_12);
 
